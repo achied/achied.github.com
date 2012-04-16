@@ -4,10 +4,10 @@
 
 url: http://achied.github.com
 title: Achied's Blog
-subtitle: A experimental blog
+subtitle: An experimental blog
 author: Eduardo Aceituno
 simple_search: http://google.com/search
-description: 
+description: Retazos del aprendizaje diario 
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -77,7 +77,7 @@ google_plus_one_size: medium
 
 # Google Plus Profile
 # Hidden: No visible button, just add author information to search results
-googleplus_user: achied
+googleplus_user: Eduardo
 googleplus_hidden: false
 
 # Pinboard
@@ -96,4 +96,4 @@ disqus_show_comment_count: true
 google_analytics_tracking_id:
 
 # Facebook Like
-facebook_like: true
+facebook_like: false
