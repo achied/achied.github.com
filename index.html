@@ -38,7 +38,7 @@ forma de diversión que como tarea seria. Como &hellip;">
   <header role="banner"><hgroup>
   <h1><a href="/">Achied's Blog</a></h1>
   
-    <h2>A experimental blog</h2>
+    <h2>An experimental blog</h2>
   
 </hgroup>
 
@@ -295,21 +295,34 @@ recursos. Desde la inclusión en línea del código,</p>
   </header>
 
 
-  <div class="entry-content"><div class='post'>
-En el pasado mes de Abril, de la mano de <a href="http://blogs.vmware.com/console/2011/04/cloud-foundry-delivering-on-vmwares-open-paas-strategy.html">vmware</a> y <a href="http://blog.springsource.com/2011/04/12/launching-cloud-foundry/">springsource</a>, nace una nueva solución en el mundo de la nube. Una solución <a href="http://en.wikipedia.org/wiki/Platform_as_a_service">PaaS</a>&nbsp;que permite el despliegue de aplicaciones evitando la complejidad de las configuraciones hardware, software y servicios subyacentes necesarios para el correcto ciclo de vida de cualquier aplicación, desde su desarrollo hasta su puesta en marcha.<br /><br />Pero&#8230; ¿qué es esto de la nube? Ciertamente el número de definiciones y conceptos es dispar. En muchos casos no se termina de tener una idea clara de ¿<i>qué es la nube?</i>. Quizá por eso se denomine de forma tan difusa ;-).<br /><br />En algunos casos (<a href="http://books.google.es/books?id=TxOJI24idPYC&amp;pg=PA45&amp;lpg=PA45&amp;dq=grid+evolution+to+cloud&amp;source=bl&amp;ots=XVY-Q1c4Ef&amp;sig=h3HE7zT5mrnYt313_W7LvjmonJc&amp;hl=es&amp;ei=z4O-TdnYOYi38QOVpsW_BQ&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=7&amp;ved=0CGIQ6AEwBg#v=onepage&amp;q=grid%20evolution%20to%20cloud&amp;f=false">Grid and Cloud Computing: A Business Perspective on Technology an Applications</a>, por ejemplo)&nbsp;se ve el <a href="http://en.wikipedia.org/wiki/Cloud_computing">Cloud Computing</a> como una evolución del <a href="http://en.wikipedia.org/wiki/Grid_computing">Grid Computing</a>. Y creo que no les falta razón. De hecho comparten muchos puntos en común en la orientación de su paradigma y con unas virtudes muy similares.<br /><br />No prentendo hacer una comparativa en toda regla, ni mucho menos. No creo que tenga los conocimientos adecuados para hacer algo de semejante calado medianamente bien, prefiero traeros un artículo muy interesante donde realizan este análisis desde los distintos ángulos entre el Cloud Computing, Grid Computing y Distributed Systems:&nbsp;<a href="http://arxiv.org/pdf/0901.0131">Cloud Computing and Grid Computing 360-Degree Compared</a>.<br /><br />En esta evolución, no son pocos los movimientos que se vienen desarrollando en este tipo de plataformas. Véase como ejemplo:<br /><ul><li><a href="http://aws.amazon.com/es/">Amazon Web Services</a></li><li><a href="http://code.google.com/appengine/">Google App Engine</a></li><li><a href="http://www.microsoft.com/windowsazure/">Azure</a></li><li><a href="http://www.heroku.com/">Heroku</a></li><li><a href="http://www.ibm.com/cloud-computing/us/en/#%21paas">IBM SmartCloud</a></li><li><a href="http://cloudcontrol.com/php-cloud-platform-as-a-service-en/">CloudControl</a></li></ul><div>Pero hay algo que, a mi parecer, hace a <a href="http://www.cloudfoundry.com/">CloudFoundry</a>&nbsp;algo diferente.<br /><br /><ol><li>Proyecto Open Source:&nbsp;<a href="http://www.cloudfoundry.org/">www.cloudfoundry.org</a>. El código está disponible en&nbsp;<a href="https://github.com/cloudfoundry">https://github.com/cloudfoundry</a>&nbsp;Y esto hace que sea muy muy interesante.</li><li>Sin restricciones en los frameworks soportados.</li><li>Cloud Foundry Micro Cloud. Previo registro nos pueden habilitar una micro nube descargable de forma que podamos hacer nuestras pruebas en nuestros propios entornos. Nos da la capacidad de tener PaaS en una de nuestras máquinas.</li></ol><div>Definitivamente creo que springsource y vmware han hecho un movimiento muy inteligente a la hora de proporcionar una plataforma tan abierta. En su <a href="http://www.cloudfoundry.com/faq">FAQ</a>&nbsp;justifican y detallan esta elección.&nbsp;</div></div><div><br /></div><div>Esto es lo que se puede ver a simple vista. Espero poder entrar en mayor detalle según me acerque a las plataformas&nbsp;con ejemplos sencillos que nos permitan conocer mejor sus características y modos de uso.</div></div>
-<h2>Comments</h2>
-<div class='comments'>
-<div class='comment'>
-<div class='author'>Eduardo Aceituno</div>
-<div class='content'>
-Más que apoyo consiste en desarrollo de producto propio aunque con código abierto. Según yo lo veo, la solución de UCS ayuda a construir la parte de la infraestructura (IaaS) pero la plataforma en sí no es incompatible con estas soluciones, más bien la complementa. Y esto viene a confirmar su estrategia para el desarrollo de servicios y plataformas en la nube y no sólo quedarse en la parte de la infraestructura.</div>
-</div>
-<div class='comment'>
-<div class='author'>La pseudo-friky</div>
-<div class='content'>
-Jolín, que raro me ha sonado que VMware apoye otras soluciones PaaS en la nube cuando se ha aliado con BMC (junto con Cisco y EMC2).<br /><br />Fdo.<br />Patri</div>
-</div>
-</div>
+  <div class="entry-content"><p>En el pasado mes de Abril, de la mano de <a href="http://blogs.vmware.com/console/2011/04/cloud-foundry-delivering-on-vmwares-open-paas-strategy.html">vmware</a> y <a href="http://blog.springsource.com/2011/04/12/launching-cloud-foundry/">springsource</a> nace una nueva solución en el mundo de la nube. Una solución <a href="http://en.wikipedia.org/wiki/Platform_as_a_service">PaaS</a> que permite el despliegue de aplicaciones evitando la complejidad de las configuraciones hardware, software y servicios subyacentes necesarios para el correcto ciclo de vida de cualquier aplicación, desde su desarrollo hasta su puesta en marcha.</p>
+
+<p>Pero&#8230; ¿qué es esto de la nube? Ciertamente el número de definiciones y conceptos es dispar. En muchos casos no se termina de tener una idea clara de ¿qué es la nube? Quizá por eso se denomine de forma tan difusa ;-).</p>
+
+<p>En algunos casos (<a href="http://books.google.es/books?id=TxOJI24idPYC&amp;amp;pg=PA45&amp;amp;lpg=PA45&amp;amp;dq=grid+evolution+to+cloud&amp;amp;source=bl&amp;amp;ots=XVY-Q1c4Ef&amp;amp;sig=h3HE7zT5mrnYt313_W7LvjmonJc&amp;amp;hl=es&amp;amp;ei=z4O-TdnYOYi38QOVpsW_BQ&amp;amp;sa=X&amp;amp;oi=book_result&amp;amp;ct=result&amp;amp;resnum=7&amp;amp;ved=0CGIQ6AEwBg#v=onepage&amp;amp;q=grid%20evolution%20to%20cloud&amp;amp;f=false">Grid and Cloud Computing: A Business Perspective on Technology an Applications</a>, por ejemplo) se ve el <a href="http://en.wikipedia.org/wiki/Cloud_computing">Cloud Computing</a> como una evolución del <a href="http://en.wikipedia.org/wiki/Grid_computing" title="">Grid Computing</a> Y creo que no les falta razón. De hecho comparten muchos puntos en común en la orientación de su paradigma y con unas virtudes muy similares.</p>
+
+<p>No prentendo hacer una comparativa en toda regla, ni mucho menos. No creo que tenga los conocimientos adecuados para hacer algo de semejante calado medianamente bien, prefiero traeros un artículo muy interesante donde realizan este análisis desde los distintos ángulos entre el Cloud Computing, Grid Computing y Distributed Systems: <a href="http://arxiv.org/pdf/0901.0131">Cloud Computing and Grid Computing 360-Degree Compared</a></p>
+
+<p>En esta evolución, no son pocos los movimientos que se vienen desarrollando en este tipo de plataformas. Véase como ejemplo:
+- <a href="http://aws.amazon.com/es/">Amazon Web Services</a>
+- <a href="http://code.google.com/appengine/">Google App Engine</a>
+- <a href="http://www.microsoft.com/windowsazure/">Azure</a>
+- <a href="http://www.heroku.com/">Heroku</a>
+- <a href="http://www.ibm.com/cloud-computing/us/en/#%21paas">IBM SmartCloud</a>
+- <a href="http://cloudcontrol.com/php-cloud-platform-as-a-service-en/">CloudControl</a></p>
+
+<p>Pero hay algo que, a mi parecer, hace a <a href="http://www.cloudfoundry.com/">CloudFoundry</a> algo diferente.</p>
+
+<ol>
+<li><em>Proyecto Open Source</em>: <a href="http://www.cloudfoundry.org/" title="">www.cloudfoundry.org</a>. El código está disponible en <a href="https://github.com/cloudfoundry">https://github.com/cloudfoundry</a> Y esto hace que sea muy muy interesante.</li>
+<li>Sin restricciones en los frameworks soportados.</li>
+<li>Cloud Foundry Micro Cloud. Previo registro nos pueden habilitar una micro nube descargable de forma que podamos hacer nuestras pruebas en nuestros propios entornos. Nos da la capacidad de tener PaaS en una de nuestras máquinas.</li>
+</ol>
+
+
+<p>Definitivamente creo que springsource y vmware han hecho un movimiento muy inteligente a la hora de proporcionar una plataforma tan abierta. En su  <a href="http://www.cloudfoundry.com/faq">FAQ</a> justifican y detallan esta elección.</p>
+
+<p>Esto es lo que se puede ver a simple vista. Espero poder entrar en mayor detalle según me acerque a las plataformas con ejemplos sencillos que nos permitan conocer mejor sus características y modos de uso.</p>
 </div>
   
   
@@ -347,21 +360,39 @@ Jolín, que raro me ha sonado que VMware apoye otras soluciones PaaS en la nube 
   </header>
 
 
-  <div class="entry-content"><div class='post'>
-<div style="text-align: justify;">Estaba pensando en elegir alguno de los temas que tengo apuntados cuando me asaltó la duda de cómo poder formatear los fragmentos de código en el blog.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">¿Editar en HTML? Bastante me ha costado empezar como para encontrar una excusa barata para rendirme :D</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Así que&#8230; ¡Por el podeeeer deeee Google!</div><div style="text-align: justify;"><br /></div><div style="border-style: dotted; border-width: 1px; text-align: justify;"><blockquote>syntax highlight blogger</blockquote></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Y encontramos un <a href="http://heisencoder.net/2009/01/adding-syntax-highlighting-to-blogger.html">enlace</a>&nbsp;que nos lleva a la madre del cordero&nbsp;<a href="http://alexgorbatchev.com/SyntaxHighlighter/">SyntaxHighlighter</a></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">En esta página tenemos algunos enlaces interesantes de cómo <a href="http://alexgorbatchev.com/SyntaxHighlighter/integration.html">integrarlo</a> con blogger y, particularmente me quedo con este:<br /><a href="http://www.cyberack.com/2007/07/adding-syntax-highlighter-to-blogger.html">http://www.cyberack.com/2007/07/adding-syntax-highlighter-to-blogger.html</a></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Así que&#8230; manos a la obra:</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Me voy a la pestaña de <i><b>Diseño</b></i></div><div style="text-align: justify;"><br /></div><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-u-qu8UMSu6E/Tbk_X5wltXI/AAAAAAAAAQk/IQWr2_4miLQ/s1600/Pesta%25C3%25B1a_Dise%25C3%25B1or.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em; text-align: justify;"><img border="0" height="43" src="http://1.bp.blogspot.com/-u-qu8UMSu6E/Tbk_X5wltXI/AAAAAAAAAQk/IQWr2_4miLQ/s400/Pesta%25C3%25B1a_Dise%25C3%25B1or.png" width="400" /></a></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Selecciono <i><b>Edición de HTML</b></i></div><div style="text-align: justify;"><br /></div><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-J-MvbnfCKU0/Tbk_amUtD_I/AAAAAAAAAQo/er59b0AV1Fk/s1600/Edicion_HTML.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em; text-align: justify;"><img border="0" height="101" src="http://1.bp.blogspot.com/-J-MvbnfCKU0/Tbk_amUtD_I/AAAAAAAAAQo/er59b0AV1Fk/s400/Edicion_HTML.png" width="400" /></a></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><i><b>Descargo la plantilla completa</b></i>&nbsp;por si las cosas salen mal y&#8230; copio el código pertinente en el recuadro editable de la plantilla</div><div style="text-align: justify;"><br /></div><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-UXyi8eRX9HE/TblBGj8P-HI/AAAAAAAAARI/09Hf70AYQ9w/s1600/Editar_Plantilla.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em; text-align: justify;"><img border="0" height="232" src="http://4.bp.blogspot.com/-UXyi8eRX9HE/TblBGj8P-HI/AAAAAAAAARI/09Hf70AYQ9w/s400/Editar_Plantilla.png" width="400" /></a></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">¡Código ya resaltado!</div><br /><script class="brush:html" type="syntaxhighlighter"><![CDATA[&lt;!--SYNTAX HIGHLIGHTER BEGINS--&gt;&lt;link href='http://alexgorbatchev.com/pub/sh/current/styles/shCore.css' rel='stylesheet' type='text/css'/&gt;&lt;link href='http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css' rel='stylesheet' type='text/css'/&gt;&lt;script src='http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js' type='text/javascript'/&gt;&lt;script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCpp.js' type='text/javascript'/&gt;&lt;script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCSharp.js' type='text/javascript'/&gt;&lt;script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCss.js' type='text/javascript'/&gt;&lt;script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJava.js' type='text/javascript'/&gt;&lt;script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js' type='text/javascript'/&gt;&lt;script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPhp.js' type='text/javascript'/&gt;&lt;script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPython.js' type='text/javascript'/&gt;&lt;script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushRuby.js' type='text/javascript'/&gt;&lt;script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushSql.js' type='text/javascript'/&gt;&lt;script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushVb.js' type='text/javascript'/&gt;&lt;script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushXml.js' type='text/javascript'/&gt;&lt;script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPerl.js' type='text/javascript'/&gt;&lt;script language='javascript'&gt;SyntaxHighlighter.config.bloggerMode = true;SyntaxHighlighter.config.clipboardSwf = 'http://alexgorbatchev.com/pub/sh/current/scripts/clipboard.swf';SyntaxHighlighter.all();&lt;/script&gt;]]></script><br /><br /><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Prueba superada. Ya iré pensando en otro tipo de retoques de la plantilla&#8230; aunque ya he reconocido que no tengo especial arte para esto.<br /><br />Por último, aquí os dejo un listado interesante de <a href="http://www.elwebmaster.com/general/los-mejores-resaltadores-de-sintaxis-de-codigo-para-tu-web">resaltadores de sintaxis</a></div></div>
-<h2>Comments</h2>
-<div class='comments'>
-<div class='comment'>
-<div class='author'>Eduardo Aceituno</div>
-<div class='content'>
-Me alegro de que te haya servido.</div>
-</div>
-<div class='comment'>
-<div class='author'>Andres Zubelzu</div>
-<div class='content'>
-Muy buen muchas gracias men!</div>
-</div>
-</div>
+  <div class="entry-content"><p>Estaba pensando en elegir alguno de los temas que tengo apuntados cuando me asaltó la duda de cómo poder formatear los fragmentos de código en el blog.</p>
+
+<p>¿Editar en HTML? Bastante me ha costado empezar como para encontrar una excusa barata para rendirme :D</p>
+
+<p>Así que&#8230; ¡Por el podeeeer deeee Google!</p>
+
+<blockquote><p>syntax highlight blogger</p></blockquote>
+
+<p>Y encontramos un <a href="http://heisencoder.net/2009/01/adding-syntax-highlighting-to-blogger.html" title="">enlace</a> que nos lleva a la madre del cordero <a href="http://alexgorbatchev.com/SyntaxHighlighter/">SyntaxHiglighter</a></p>
+
+<p>En esta página tenemos algunos enlaces interesantes de cómo <a href="http://alexgorbatchev.com/SyntaxHighlighter/integration.html">integrarlo</a> integrarlo con blogger y, particularmente me quedo con este:</p>
+
+<p>http://www.cyberack.com/2007/07/adding-syntax-highlighter-to-blogger.html</p>
+
+<p>Así que&#8230; manos a la obra:</p>
+
+<p>Me voy a la pestaña de Diseño</p>
+
+<p><img src="http://1.bp.blogspot.com/-u-qu8UMSu6E/Tbk_X5wltXI/AAAAAAAAAQk/IQWr2_4miLQ/s1600/Pesta%25C3%25B1a_Dise%25C3%25B1or.png" alt="" /></p>
+
+<p>Selecciono <code>Edición de HTML</code></p>
+
+<p><img src="http://1.bp.blogspot.com/-J-MvbnfCKU0/Tbk_amUtD_I/AAAAAAAAAQo/er59b0AV1Fk/s1600/Edicion_HTML.png" alt="" /></p>
+
+<p>Descargo la plantilla completapor si las cosas salen mal y&#8230; copio el código pertinente en el recuadro editable de la plantilla</p>
+
+<p><a href="http://4.bp.blogspot.com/-UXyi8eRX9HE/TblBGj8P-HI/AAAAAAAAARI/09Hf70AYQ9w/s1600/Editar_Plantilla.png"></a></p>
+
+<p>¡Código ya resaltado!</p>
+
+<p>Prueba superada. Ya iré pensando en otro tipo de retoques de la plantilla&#8230; aunque ya he reconocido que no tengo especial arte para esto.</p>
+
+<p>Por último, aquí os dejo un listado interesante de <a href="http://www.elwebmaster.com/general/los-mejores-resaltadores-de-sintaxis-de-codigo-para-tu-web">resaltadores de sintáxis</a></p>
 </div>
   
   
@@ -529,7 +560,7 @@ Muy buen muchas gracias men!</div>
 
 <section class="googleplus">
   <h1>
-    <a href="https://plus.google.com/achied?rel=author">
+    <a href="https://plus.google.com/Eduardo?rel=author">
       <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
       Google+
     </a>
@@ -565,15 +596,6 @@ Muy buen muchas gracias men!</div>
 </script>
 
 
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) {return;}
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
 
 
