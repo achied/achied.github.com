@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: blog | Achied's Blog]]></title>
+  <link href="http://achied.github.com/blog/categories/blog/atom.xml" rel="self"/>
+  <link href="http://achied.github.com/"/>
+  <updated>2012-04-16T18:39:38+02:00</updated>
+  <id>http://achied.github.com/</id>
+  <author>
+    <name><![CDATA[Eduardo Aceituno]]></name>
+    <email><![CDATA[achied@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Migrando de Blogger a Octopress]]></title>
+    <link href="http://achied.github.com/blog/2012/04/17/migrando-de-blogger-a-octorpess/"/>
+    <updated>2012-04-17T09:00:00+02:00</updated>
+    <id>http://achied.github.com/blog/2012/04/17/migrando-de-blogger-a-octorpess</id>
+    <content type="html"><![CDATA[<h2>Un poco de historia</h2>
+
+<p>Hace tiempo emprendí la aventura de escribir un blog, más como pasatiempo y
+forma de diversión que como tarea seria. Como resultado... pocas y
+desorganizadas entradas.</p>
+
+<h2>¿Y por qué cambiar?</h2>
+
+<p>Si escribo poco y apenas le dedico tiempo... ¿por qué cambiar? Básicamente por
+tres razones:</p>
+
+<ol>
+<li>Seguir aprendiendo ruby</li>
+<li>Seguir aprendiendo Git</li>
+<li>Hacerlo más personalizable</li>
+</ol>
+
+
+<h2>Más útil para un desarrollador</h2>
+
+<p>La sintáxis de código es más sencilla y automática, con múltiples opciones y
+recursos. Desde la inclusión en línea del código,</p>
+
+<p><code>ruby sample
+def sample
+  puts "Hello World!!!"
+end
+</code></p>
+
+<p>hasta la posibilidad de hacerlo disponible bajo descarga</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span> (hello_world.rb)</span> <a href='/downloads/code/hello_world.rb'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="k">def</span> <span class="nf">sample</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;Hello World!!!&quot;</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+]]></content>
+  </entry>
+  
+</feed>
