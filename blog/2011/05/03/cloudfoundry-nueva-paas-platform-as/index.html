@@ -1,0 +1,339 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>CloudFoundry: Nueva PaaS (Platform as a Service) - Achied's Blog</title>
+  <meta name="author" content="Eduardo Aceituno">
+
+  
+  <meta name="description" content="En el pasado mes de Abril, de la mano de vmware y springsource, nace una nueva solución en el mundo de la nube. Una solución PaaS&nbsp;que permite &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://achied.github.com/blog/2011/05/03/cloudfoundry-nueva-paas-platform-as">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Achied's Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Achied's Blog</a></h1>
+  
+    <h2>A experimental blog</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:achied.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">CloudFoundry: Nueva PaaS (Platform as a Service)</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-05-03T00:00:00+02:00" pubdate data-updated="true">May 3<span>rd</span>, 2011</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><div class='post'>
+En el pasado mes de Abril, de la mano de <a href="http://blogs.vmware.com/console/2011/04/cloud-foundry-delivering-on-vmwares-open-paas-strategy.html">vmware</a> y <a href="http://blog.springsource.com/2011/04/12/launching-cloud-foundry/">springsource</a>, nace una nueva solución en el mundo de la nube. Una solución <a href="http://en.wikipedia.org/wiki/Platform_as_a_service">PaaS</a>&nbsp;que permite el despliegue de aplicaciones evitando la complejidad de las configuraciones hardware, software y servicios subyacentes necesarios para el correcto ciclo de vida de cualquier aplicación, desde su desarrollo hasta su puesta en marcha.<br /><br />Pero&#8230; ¿qué es esto de la nube? Ciertamente el número de definiciones y conceptos es dispar. En muchos casos no se termina de tener una idea clara de ¿<i>qué es la nube?</i>. Quizá por eso se denomine de forma tan difusa ;-).<br /><br />En algunos casos (<a href="http://books.google.es/books?id=TxOJI24idPYC&amp;pg=PA45&amp;lpg=PA45&amp;dq=grid+evolution+to+cloud&amp;source=bl&amp;ots=XVY-Q1c4Ef&amp;sig=h3HE7zT5mrnYt313_W7LvjmonJc&amp;hl=es&amp;ei=z4O-TdnYOYi38QOVpsW_BQ&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=7&amp;ved=0CGIQ6AEwBg#v=onepage&amp;q=grid%20evolution%20to%20cloud&amp;f=false">Grid and Cloud Computing: A Business Perspective on Technology an Applications</a>, por ejemplo)&nbsp;se ve el <a href="http://en.wikipedia.org/wiki/Cloud_computing">Cloud Computing</a> como una evolución del <a href="http://en.wikipedia.org/wiki/Grid_computing">Grid Computing</a>. Y creo que no les falta razón. De hecho comparten muchos puntos en común en la orientación de su paradigma y con unas virtudes muy similares.<br /><br />No prentendo hacer una comparativa en toda regla, ni mucho menos. No creo que tenga los conocimientos adecuados para hacer algo de semejante calado medianamente bien, prefiero traeros un artículo muy interesante donde realizan este análisis desde los distintos ángulos entre el Cloud Computing, Grid Computing y Distributed Systems:&nbsp;<a href="http://arxiv.org/pdf/0901.0131">Cloud Computing and Grid Computing 360-Degree Compared</a>.<br /><br />En esta evolución, no son pocos los movimientos que se vienen desarrollando en este tipo de plataformas. Véase como ejemplo:<br /><ul><li><a href="http://aws.amazon.com/es/">Amazon Web Services</a></li><li><a href="http://code.google.com/appengine/">Google App Engine</a></li><li><a href="http://www.microsoft.com/windowsazure/">Azure</a></li><li><a href="http://www.heroku.com/">Heroku</a></li><li><a href="http://www.ibm.com/cloud-computing/us/en/#%21paas">IBM SmartCloud</a></li><li><a href="http://cloudcontrol.com/php-cloud-platform-as-a-service-en/">CloudControl</a></li></ul><div>Pero hay algo que, a mi parecer, hace a <a href="http://www.cloudfoundry.com/">CloudFoundry</a>&nbsp;algo diferente.<br /><br /><ol><li>Proyecto Open Source:&nbsp;<a href="http://www.cloudfoundry.org/">www.cloudfoundry.org</a>. El código está disponible en&nbsp;<a href="https://github.com/cloudfoundry">https://github.com/cloudfoundry</a>&nbsp;Y esto hace que sea muy muy interesante.</li><li>Sin restricciones en los frameworks soportados.</li><li>Cloud Foundry Micro Cloud. Previo registro nos pueden habilitar una micro nube descargable de forma que podamos hacer nuestras pruebas en nuestros propios entornos. Nos da la capacidad de tener PaaS en una de nuestras máquinas.</li></ol><div>Definitivamente creo que springsource y vmware han hecho un movimiento muy inteligente a la hora de proporcionar una plataforma tan abierta. En su <a href="http://www.cloudfoundry.com/faq">FAQ</a>&nbsp;justifican y detallan esta elección.&nbsp;</div></div><div><br /></div><div>Esto es lo que se puede ver a simple vista. Espero poder entrar en mayor detalle según me acerque a las plataformas&nbsp;con ejemplos sencillos que nos permitan conocer mejor sus características y modos de uso.</div></div>
+<h2>Comments</h2>
+<div class='comments'>
+<div class='comment'>
+<div class='author'>Eduardo Aceituno</div>
+<div class='content'>
+Más que apoyo consiste en desarrollo de producto propio aunque con código abierto. Según yo lo veo, la solución de UCS ayuda a construir la parte de la infraestructura (IaaS) pero la plataforma en sí no es incompatible con estas soluciones, más bien la complementa. Y esto viene a confirmar su estrategia para el desarrollo de servicios y plataformas en la nube y no sólo quedarse en la parte de la infraestructura.</div>
+</div>
+<div class='comment'>
+<div class='author'>La pseudo-friky</div>
+<div class='content'>
+Jolín, que raro me ha sonado que VMware apoye otras soluciones PaaS en la nube cuando se ha aliado con BMC (junto con Cisco y EMC2).<br /><br />Fdo.<br />Patri</div>
+</div>
+</div>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Eduardo Aceituno</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-05-03T00:00:00+02:00" pubdate data-updated="true">May 3<span>rd</span>, 2011</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/cloud/'>cloud</a>, <a class='category' href='/blog/categories/cloudfoundry/'>cloudfoundry</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://achied.github.com/blog/2011/05/03/cloudfoundry-nueva-paas-platform-as/" data-via="achilued" data-counturl="http://achied.github.com/blog/2011/05/03/cloudfoundry-nueva-paas-platform-as/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2011/04/29/resaltando-sintaxis-en-blogger/" title="Previous Post: Resaltando sintaxis en blogger">&laquo; Resaltando sintaxis en blogger</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2011/05/23/arquitectura-cloud-basica/" title="Next Post: Arquitectura Cloud básica">Arquitectura Cloud básica &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/11/28/instalacion-de-ruby-192-con-rvm-error/">Instalación de ruby 1.9.2 con rvm: Error en yaml-0.1.4</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/11/18/tanto-leer-y-tan-poco-escribir/">Tanto leer y tan poco escribir!!!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/05/23/arquitectura-cloud-basica/">Arquitectura Cloud básica</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/05/03/cloudfoundry-nueva-paas-platform-as/">CloudFoundry: Nueva PaaS (Platform as a Service)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/04/29/resaltando-sintaxis-en-blogger/">Resaltando sintaxis en blogger</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/achied">@achied</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'achied',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("achilued", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/achilued" class="twitter-follow-button" data-show-count="false">Follow @achilued</a>
+  
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/achied?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/achied">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/achied?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Eduardo Aceituno -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'achiedblog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://achied.github.com/blog/2011/05/03/cloudfoundry-nueva-paas-platform-as/';
+        var disqus_url = 'http://achied.github.com/blog/2011/05/03/cloudfoundry-nueva-paas-platform-as/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

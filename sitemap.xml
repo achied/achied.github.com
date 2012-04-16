@@ -1,11 +1,35 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>http://achied.github.com/blog/2011/04/27/manana-empiezo/</loc>
+        <lastmod>2012-04-16T14:55:04+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://achied.github.com/blog/2011/04/29/resaltando-sintaxis-en-blogger/</loc>
+        <lastmod>2012-04-16T14:55:18+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://achied.github.com/blog/2011/05/03/cloudfoundry-nueva-paas-platform-as/</loc>
+        <lastmod>2012-04-16T14:55:28+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://achied.github.com/blog/2011/05/23/arquitectura-cloud-basica/</loc>
+        <lastmod>2012-04-16T14:55:36+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://achied.github.com/blog/2011/11/18/tanto-leer-y-tan-poco-escribir/</loc>
+        <lastmod>2012-04-16T14:55:45+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://achied.github.com/blog/2011/11/28/instalacion-de-ruby-192-con-rvm-error/</loc>
+        <lastmod>2012-04-16T14:55:54+02:00</lastmod>
+    </url>
+    <url>
         <loc>http://achied.github.com/</loc>
-        <lastmod>2012-04-16T13:54:12+02:00</lastmod>
+        <lastmod>2012-04-16T14:55:54+02:00</lastmod>
     </url>
     <url>
         <loc>http://achied.github.com/blog/archives/</loc>
-        <lastmod>2012-04-16T13:54:12+02:00</lastmod>
+        <lastmod>2012-04-16T14:55:54+02:00</lastmod>
     </url>
 </urlset>
