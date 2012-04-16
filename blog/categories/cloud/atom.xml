@@ -4,7 +4,7 @@
   <title><![CDATA[Category: cloud | Achied's Blog]]></title>
   <link href="http://achied.github.com/blog/categories/cloud/atom.xml" rel="self"/>
   <link href="http://achied.github.com/"/>
-  <updated>2012-04-16T19:55:53+02:00</updated>
+  <updated>2012-04-16T20:41:29+02:00</updated>
   <id>http://achied.github.com/</id>
   <author>
     <name><![CDATA[Eduardo Aceituno]]></name>
@@ -49,19 +49,23 @@
 <p>No prentendo hacer una comparativa en toda regla, ni mucho menos. No creo que tenga los conocimientos adecuados para hacer algo de semejante calado medianamente bien, prefiero traeros un artículo muy interesante donde realizan este análisis desde los distintos ángulos entre el Cloud Computing, Grid Computing y Distributed Systems: <a href="http://arxiv.org/pdf/0901.0131">Cloud Computing and Grid Computing 360-Degree Compared</a></p>
 
 <p>En esta evolución, no son pocos los movimientos que se vienen desarrollando en este tipo de plataformas. Véase como ejemplo:
-- <a href="http://aws.amazon.com/es/">Amazon Web Services</a>
-- <a href="http://code.google.com/appengine/">Google App Engine</a>
-- <a href="http://www.microsoft.com/windowsazure/">Azure</a>
-- <a href="http://www.heroku.com/">Heroku</a>
-- <a href="http://www.ibm.com/cloud-computing/us/en/#%21paas">IBM SmartCloud</a>
-- <a href="http://cloudcontrol.com/php-cloud-platform-as-a-service-en/">CloudControl</a></p>
+* <a href="http://aws.amazon.com/es/">Amazon Web Services</a></p>
+
+<ul>
+<li><p><a href="http://code.google.com/appengine/">Google App Engine</a></p></li>
+<li><p><a href="http://www.microsoft.com/windowsazure/">Azure</a></p></li>
+<li><p><a href="http://www.heroku.com/">Heroku</a></p></li>
+<li><p><a href="http://www.ibm.com/cloud-computing/us/en/#%21paas">IBM SmartCloud</a></p></li>
+<li><p><a href="http://cloudcontrol.com/php-cloud-platform-as-a-service-en/">CloudControl</a></p></li>
+</ul>
+
 
 <p>Pero hay algo que, a mi parecer, hace a <a href="http://www.cloudfoundry.com/">CloudFoundry</a> algo diferente.</p>
 
 <ol>
-<li><em>Proyecto Open Source</em>: <a href="http://www.cloudfoundry.org/" title="">www.cloudfoundry.org</a>. El código está disponible en <a href="https://github.com/cloudfoundry">https://github.com/cloudfoundry</a> Y esto hace que sea muy muy interesante.</li>
-<li>Sin restricciones en los frameworks soportados.</li>
-<li>Cloud Foundry Micro Cloud. Previo registro nos pueden habilitar una micro nube descargable de forma que podamos hacer nuestras pruebas en nuestros propios entornos. Nos da la capacidad de tener PaaS en una de nuestras máquinas.</li>
+<li><p><em>Proyecto Open Source</em>: <a href="http://www.cloudfoundry.org/" title="">www.cloudfoundry.org</a>. El código está disponible en <a href="https://github.com/cloudfoundry">https://github.com/cloudfoundry</a> Y esto hace que sea muy muy interesante.</p></li>
+<li><p>Sin restricciones en los frameworks soportados.</p></li>
+<li><p>Cloud Foundry Micro Cloud. Previo registro nos pueden habilitar una micro nube descargable de forma que podamos hacer nuestras pruebas en nuestros propios entornos. Nos da la capacidad de tener PaaS en una de nuestras máquinas.</p></li>
 </ol>
 
 
