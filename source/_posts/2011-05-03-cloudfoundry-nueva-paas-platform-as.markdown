@@ -26,7 +26,7 @@ En esta evolución, no son pocos los movimientos que se vienen desarrollando en 
 
 Pero hay algo que, a mi parecer, hace a [CloudFoundry](http://www.cloudfoundry.com/) algo diferente.
 
-1. *Proyecto Open Source* [www.cloudfoundry.org](http://www.cloudfoundry.org/"): El código está disponible en [https://github.com/cloudfoundry](https://github.com/cloudfoundry) Y esto hace que sea muy muy interesante.
+1. **Proyecto Open Source** [www.cloudfoundry.org](http://www.cloudfoundry.org/"): El código está disponible en [https://github.com/cloudfoundry](https://github.com/cloudfoundry) Y esto hace que sea muy muy interesante.
 
 2. Sin restricciones en los frameworks soportados.
 
