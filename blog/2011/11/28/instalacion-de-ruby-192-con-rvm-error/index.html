@@ -9,7 +9,7 @@
   <meta name="author" content="Eduardo Aceituno">
 
   
-  <meta name="description" content="Enredando estos días con cloudfoundry, unas de los elementos que instala y configura es rvm, un sistema de gestión de versiones de ruby y sus gemas &hellip;">
+  <meta name="description" content="Enredando estos días con cloudfoundry uno de los elementos que instala y configura es rvm un sistema de gestión de versiones de ruby y sus gemas. Muy &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -92,8 +92,51 @@
   </header>
 
 
-<div class="entry-content"><div class='post'>
-<div style="text-align: justify;">Enredando estos días con <a href="https://github.com/cloudfoundry/vcap" target="_blank">cloudfoundry</a>, unas de los elementos que instala y configura es <a href="https://rvm.beginrescueend.com/" target="_blank">rvm</a>, un sistema de gestión de versiones de ruby y sus gemas. Muy útil a la hora de estar con desarrollos donde las dependencias y las versiones son dispares. Permite aislar los entornos y adaptarlos de forma personalizada, elegir la versión de ruby más adecuada, construir un grupo de gemas específico para cada entorno, &#8230;</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Después de haber instalado rvm la compilación de ruby nos da un error extraño</div><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/-2dpmYu1N5FA/Tsue5q_IbvI/AAAAAAAAAUs/4EFll10IDKg/s1600/error_yaml.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="233" src="http://2.bp.blogspot.com/-2dpmYu1N5FA/Tsue5q_IbvI/AAAAAAAAAUs/4EFll10IDKg/s640/error_yaml.png" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">error de configuración y compilación de yaml-0.1.4</td></tr></tbody></table><br /><div style="text-align: justify;">Para solucionar este pequeño inconveniente realizamos los siguientes pasos:</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Instalamos libtool, en el caso de no tenerlo instalado</div><blockquote class="tr_bq"><b>apt-get install libtool</b></blockquote>Entramos dentro del directorio donde están las fuentes de yaml<br /><blockquote class="tr_bq"><b>cd .rvm/src/yaml-0.1.4/</b></blockquote>Eliminamos los ficheros generados de forma errónea<br /><blockquote class="tr_bq"><b>rm aclocal.m4&nbsp;</b></blockquote><blockquote class="tr_bq"><b>rm config/ltmain.sh</b></blockquote>Volvemos a reconfigurar para generar los ficheros eliminados de forma adecuada<br /><blockquote class="tr_bq"><b>autoreconf</b></blockquote><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-VSsXdSwzuEk/TsvBQdn9f-I/AAAAAAAAAU4/8ToPaH3mWkY/s1600/autoreconf_yaml.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="240" src="http://1.bp.blogspot.com/-VSsXdSwzuEk/TsvBQdn9f-I/AAAAAAAAAU4/8ToPaH3mWkY/s640/autoreconf_yaml.png" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">reconfiguración de yaml</td></tr></tbody></table>Y reinstalamos la versión de ruby<br /><blockquote class="tr_bq"><b>rvm install 1.9.2-p180</b></blockquote><br />Al final tenemos nuestra versión 1.9.2-p180 funcionando correctamente y sin problemas<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-8r2q5_6j5cg/TsvBv9kzOQI/AAAAAAAAAVI/BysWMW2ek_A/s1600/yaml_solucionado.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="204" src="http://3.bp.blogspot.com/-8r2q5_6j5cg/TsvBv9kzOQI/AAAAAAAAAVI/BysWMW2ek_A/s640/yaml_solucionado.png" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Instalación correcta</td></tr></tbody></table><br /><br /></div>
+<div class="entry-content"><p>Enredando estos días con <a href="https://github.com/achied/vcap">cloudfoundry</a> uno de los elementos que instala y configura es <a href="https://rvm.beginrescueend.com/">rvm</a> un sistema de gestión de versiones de ruby y sus gemas. Muy útil a la hora de estar con desarrollos donde las dependencias y las versiones son dispares. Permite aislar los entornos y adaptarlos de forma personalizada, elegir la versión de ruby más adecuada, construir un grupo de gemas específico para cada entorno, &#8230;</p>
+
+<p>Después de haber instalado rvm la compilación de ruby nos da un error extraño</p>
+
+<p><img src="http://2.bp.blogspot.com/-2dpmYu1N5FA/Tsue5q_IbvI/AAAAAAAAAUs/4EFll10IDKg/s1600/error_yaml.png" title="error de configuración y compilación de yaml-0.1.4" alt="error_yaml" /></p>
+
+<p>Para solucionar este pequeño inconveniente realizamos los siguientes pasos:</p>
+
+<p>Instalamos libtool, en el caso de no tenerlo instalado</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>apt-get install libtool</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Entramos dentro del directorio donde están las fuentes de yaml</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd .rvm/src/yaml-0.1.4/</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Eliminamos los ficheros generados de forma errónea</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rm aclocal.m4
+</span><span class='line'>rm config/ltmain.sh</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Volvemos a reconfigurar para generar los ficheros eliminados de forma adecuada</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>autoreconf</span></code></pre></td></tr></table></div></figure>
+
+
+<p><img src="http://1.bp.blogspot.com/-VSsXdSwzuEk/TsvBQdn9f-I/AAAAAAAAAU4/8ToPaH3mWkY/s1600/autoreconf_yaml.png" title="reconfiguración de yaml" alt="autoreconf_yaml" /></p>
+
+<p>Y reinstalamos la versión de ruby</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rvm install 1.9.2-p180</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Al  final tenemos nuestra versión 1.9.2-p180 funcionando correctamente y sin problemas</p>
+
+<p><img src="http://3.bp.blogspot.com/-8r2q5_6j5cg/TsvBv9kzOQI/AAAAAAAAAVI/BysWMW2ek_A/s1600/yaml_solucionado.png" title="Instalación correcta" alt="yaml_solucionado" /></p>
 </div>
 
 
