@@ -16,21 +16,17 @@ En algunos casos ([Grid and Cloud Computing: A Business Perspective on Technolog
 No prentendo hacer una comparativa en toda regla, ni mucho menos. No creo que tenga los conocimientos adecuados para hacer algo de semejante calado medianamente bien, prefiero traeros un artículo muy interesante donde realizan este análisis desde los distintos ángulos entre el Cloud Computing, Grid Computing y Distributed Systems: [Cloud Computing and Grid Computing 360-Degree Compared](http://arxiv.org/pdf/0901.0131)
 
 En esta evolución, no son pocos los movimientos que se vienen desarrollando en este tipo de plataformas. Véase como ejemplo:
+
 * [Amazon Web Services](http://aws.amazon.com/es/)
-
 * [Google App Engine](http://code.google.com/appengine/)
-
 * [Azure](http://www.microsoft.com/windowsazure/)
-
 * [Heroku](http://www.heroku.com/)
-
 * [IBM SmartCloud](http://www.ibm.com/cloud-computing/us/en/#%21paas)
-
 * [CloudControl](http://cloudcontrol.com/php-cloud-platform-as-a-service-en/)
 
 Pero hay algo que, a mi parecer, hace a [CloudFoundry](http://www.cloudfoundry.com/) algo diferente.
 
-1. *Proyecto Open Source*: [www.cloudfoundry.org](http://www.cloudfoundry.org/"). El código está disponible en [https://github.com/cloudfoundry](https://github.com/cloudfoundry) Y esto hace que sea muy muy interesante.
+1. *Proyecto Open Source* [www.cloudfoundry.org](http://www.cloudfoundry.org/"): El código está disponible en [https://github.com/cloudfoundry](https://github.com/cloudfoundry) Y esto hace que sea muy muy interesante.
 
 2. Sin restricciones en los frameworks soportados.
 
