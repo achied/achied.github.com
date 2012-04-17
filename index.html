@@ -102,47 +102,37 @@ forma de diversión que como tarea seria. Como &hellip;">
 forma de diversión que como tarea seria. Como resultado&#8230; pocas y
 desorganizadas entradas.</p>
 
+<p>La cosa empezó con <a href="http://www.blogger.com/">blogger</a> y poco a poco la
+dependencia de tener que tener un cliente específico o tener que estar editando
+online hacían que cada vez me costara más. Probé a usar
+<a href="http://www.scribefire.com/">scribefire</a> pero tampoco tuve mucho éxito.</p>
+
+<p>Como siempre, la falta de tiempo y la necesidad de tener una forma más rápida y sencilla de crear los
+post, poder revisarlos, poder insertar trozos de cógio fácilmente&#8230; eran las
+excusas que ivan sumando para abandonar la tarea que había empezado.</p>
+
+<p>Estos días atrás oí hablar de <a href="https://github.com/mojombo/jekyll">jekyll</a> y
+<a href="http://jekyllbootstrap.com/">jekyllbootstrap</a> pero no terminaba de animarme ni
+de obtener un resultado que me convenciera a la primera.</p>
+
+<p>Pero he encontrado el proyecto <a href="http://octopress.org/">octopress</a>, un
+framework para <a href="https://github.com/mojombo/jekyll">jekyll</a> que simplifica la
+necesidad de tener que crear tus propios HTML y CSS.</p>
+
+<p>La página del proyecto muestra una documentación sencilla y clara de <a href="http://octopress.org/help/">cómo
+instalar y personalizar el blog</a></p>
+
 <h2>¿Y por qué cambiar?</h2>
 
 <p>Si escribo poco y apenas le dedico tiempo&#8230; ¿por qué cambiar? Básicamente por
 tres razones:</p>
 
-<ol>
-<li>Seguir aprendiendo ruby</li>
-<li>Seguir aprendiendo Git</li>
-<li>Hacerlo más personalizable</li>
-</ol>
-
-
-<h2>Más útil para un desarrollador</h2>
-
-<p>La sintáxis de código es más sencilla y automática, con múltiples opciones y
-recursos. Desde la inclusión en línea del código,</p>
-
-<figure class='code'><figcaption><span>sample</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">def</span> <span class="nf">sample</span>
-</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;Hello World!!!&quot;</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>hasta la posibilidad de hacerlo disponible bajo descarga</p>
-
-<figure class='code'><figcaption><span> (hello_world.rb)</span> <a href='/downloads/code/hello_world.rb'>download</a></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="k">def</span> <span class="nf">sample</span>
-</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;Hello World!!!&quot;</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/04/17/migrando-de-blogger-a-octorpess/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -186,45 +176,12 @@ recursos. Desde la inclusión en línea del código,</p>
 
 <p>Para solucionar este pequeño inconveniente realizamos los siguientes pasos:</p>
 
-<p>Instalamos libtool, en el caso de no tenerlo instalado</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>apt-get install libtool</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Entramos dentro del directorio donde están las fuentes de yaml</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>cd .rvm/src/yaml-0.1.4/</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Eliminamos los ficheros generados de forma errónea</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rm aclocal.m4
-</span><span class='line'>rm config/ltmain.sh</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Volvemos a reconfigurar para generar los ficheros eliminados de forma adecuada</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>autoreconf</span></code></pre></td></tr></table></div></figure>
-
-
-<p><img src="http://1.bp.blogspot.com/-VSsXdSwzuEk/TsvBQdn9f-I/AAAAAAAAAU4/8ToPaH3mWkY/s1600/autoreconf_yaml.png" title="reconfiguración de yaml" alt="autoreconf_yaml" /></p>
-
-<p>Y reinstalamos la versión de ruby</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rvm install 1.9.2-p180</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Al  final tenemos nuestra versión 1.9.2-p180 funcionando correctamente y sin problemas</p>
-
-<p><img src="http://3.bp.blogspot.com/-8r2q5_6j5cg/TsvBv9kzOQI/AAAAAAAAAVI/BysWMW2ek_A/s1600/yaml_solucionado.png" title="Instalación correcta" alt="yaml_solucionado" /></p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2011/11/28/instalacion-de-ruby-192-con-rvm-error/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -274,79 +231,12 @@ recursos. Desde la inclusión en línea del código,</p>
 
 <p>Por eso, en este artículo, serán muchas las referencias a un tiempo extenso y próspero de búsquedas y lecturas intensas. Como resultado, mencionar y enlazar aquellas cosas que otros me han mostrado y &#8230; ¿para qué repetirlo si ellos lo han hecho y lo han hecho bien?</p>
 
-<p>Han sido dos los proyectos que me han enganchado desde el primer momento:</p>
-
-<ul>
-<li><a href="http://www.openstack.org/">OpenStack</a></li>
-<li><a href="http://cloudfoundry.org/">CloudFoundry</a></li>
-</ul>
-
-
-<p>Empecé con el primero haciendo las primeras instalaciones en base a varios artículos y documentaciones</p>
-
-<ul>
-<li><a href="http://cssoss.wordpress.com/2011/04/20/openstack-beginners-guide-for-ubuntu-11-04-natt-narhwal/">OpenStack Beginner&#8217;s Guide for Ubuntu 11.04</a></li>
-<li><a href="http://docs.openstack.org/cactus/openstack-compute/admin/content/openstack-compute-installation-using-virtualbox-vagrant-and-chef.html">OpenStack Compute Installation Using VirtualBox, Vagrant and Chef</a></li>
-</ul>
-
-
-<p>Artículos que ha sido de provecho pero que hay que ir complementando debido a la nueva versión liberada a finales de Septiembre, <a href="http://www.openstack.org/projects/compute/">Diablo Release</a>.</p>
-
-<p>Quiero hacer una mención especial de <a href="http://www.stackops.com/">Stackops</a> empresa española de referencia en la comunidad como lo constatan sus <a href="http://www.nubeblog.com/2011/10/03/en-la-openstack-conference-en-boston/">participaciones</a> y sus <a href="http://www.bio-tecnologia.es/es/noticia.cfm?id_item=1839&amp;amp;apartado=1">reconocimientos</a>.</p>
-
-<p>No han sido pocas las noticias sobre la evolución del proyecto y la cantidad de compañías que se han ido adhiriendo a la marcha del mismo:</p>
-
-<ul>
-<li><a href="http://blog.canonical.com/2011/02/03/canonical-joins-the-openstack-community/">Cannonical</a></li>
-<li><a href="http://blogs.cisco.com/news/cisco-joins-openstack-community/">Cisco</a></li>
-<li><a href="http://www.zdnet.co.uk/news/cloud/2011/07/27/dell-launches-openstack-cloud-infrastructure-product-40093534/">Dell</a></li>
-<li><a href="http://www.pistoncloud.com/">Piston</a></li>
-<li><a href="http://h30507.www3.hp.com/t5/Data-Central/HP-Announces-Support-for-OpenStack/ba-p/96283">HP</a></li>
-<li><a href="http://lxnews.org/2011/11/01/suse-joins-openstack/">Suse</a></li>
-<li><a href="http://www.activestate.com/blog/2011/10/infrastructure-agnostic-paas-why-we-joined-openstack-and-ova">Stackato</a></li>
-<li>&#8230; <a href="http://www.openstack.org/community/companies/">y muchos otros</a></li>
-</ul>
-
-
-<p>Su arquitectura sigue en evolución. Muestra de ello es el número de proyectos que están naciendo alrededor del proyecto añadiendo un valor muy interesante:</p>
-
-<ul>
-<li><a href="http://wiki.openstack.org/Quantum">Quantum</a></li>
-<li><a href="http://wiki.openstack.org/OpenStackDashboard">Dashboard</a></li>
-<li><a href="https://launchpad.net/keystone">KeyStone</a></li>
-</ul>
-
-
-<p>En la página principal del proyecto podemos ver una <a href="http://www.openstack.org/projects/">referencia completa</a></p>
-
-<p>En cuanto a <a href="http://cloudfoundry.org/">CloudFoundry</a> la cosa ha sido más vertiginosa si cabe, dado que he decidido hacer una apuesta personal por este proyecto siguiendo las líneas de desarrollo más de cerca. En muy poco tiempo se ha ido añadiendo soporte para muchos entornos y servicios. Entre los más destacados</p>
-
-<ul>
-<li><a href="http://blog.cloudfoundry.com/post/9374366916/cloud-foundry-adds-php-and-python-through-community">Soporte para Python</a></li>
-<li><a href="http://blog.cloudfoundry.com/post/9374366916/cloud-foundry-adds-php-and-python-through-community">Soporte para PHP</a></li>
-<li>Soporte para Neo4J</li>
-<li>Pendiente la <a href="https://github.com/cloudfoundry/vcap/pull/139">aprobación de Mono</a></li>
-</ul>
-
-
-<p>Salen a escena <a href="http://www.appfog.com/">AppFog</a> y <a href="http://www.activestate.com/">ActivateState</a> ofreciendo sus esfuerzos llevándose como galardón el rol de <em><a href="http://cloudfoundry.org/leads">Community Lead</a></em> en sus respectivos campos. Recientemente <a href="http://www.joyent.com/">Joyent</a> ha sido nombrado Community Lead para el soporte de Node.js</p>
-
-<p>Numerosos los eventos y artículos relacionados con el proyecto, numerosas las iniciativas y esto sigue sin parar.</p>
-
-<ul>
-<li><a href="http://blog.cloudfoundry.com/post/10816758982/using-chef-to-customize-multi-node-cloud-foundry">CloudFoundry deployment with Chef</a></li>
-<li><a href="http://www.kartar.net/2011/05/install-cloud-foundry-vcap-via-puppet/">CloudFoundry deployment with Puppet</a></li>
-<li><a href="http://blog.xtremeghost.com/2011/09/from-zero-to-drawbridge-via-ubuntu.html?m=1">CloudFoundry deployment with Ensemble</a></li>
-</ul>
-
-
-<p>Aún queda mucho por aprender y mucho por seguir leyendo. Pero es de agradecer la cercanía y disposición que te prestan cuando muestras interés por colaborar.</p>
-
-<p>Hasta aquí un breve resumen de todo este tiempo y la andadura por muchas tecnologías y conocimientos paralelos: Chef, Puppet, Rvm, Ruby, Rails, Vagrant, Nats, New Relic, Collectd, CEP, CEE&#8230; y un largo etcétera.</p>
-
-<p>A partir de aquí tomaré la determinación de ir poniendo posts más breves, y no queriendo ser tan perfeccionista y organizado. Al final se trata de mostrar lo que sé y como lo sé. Ir compartiendo lo cotidiano de mi trabajo e inquietudes al ritmo al que se van presentando. Puede que sea menos atractivo pero desde luego es mucho más cercano y coherente.</p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2011/11/18/tanto-leer-y-tan-poco-escribir/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -396,46 +286,12 @@ recursos. Desde la inclusión en línea del código,</p>
 
 <p>Así que para enmendar mi torpeza haré un breve resumen de lo que presentaba en la última entrada.</p>
 
-<h2>Arquitectura Cloud básica</h2>
-
-<p>Los elementos fundamentales de la arquitectura cloud no difieren mucho de aquellos que tradicionalmente conocemos. Antes de desplegar ningún tipo de servicio o desarrollo, es preciso disponer de una plataforma que nos ofrezca los recursos necesarios para el ciclo de vida completo de nuestra aplicación: Un contenedor de ejecución, una fuente de acceso a datos, &#8230; Y esta plataforma, a su vez, ha de descansar en alguna infraestructura que le ofrezca los recursos de cómputo, memoria, red&#8230;</p>
-
-<p><em>Un ejemplo concreto tradicional</em>
-Servicio: Una página web
-Plataforma: Una base de datos
-Infraestructura: Un PC o servidor</p>
-
-<p>Evidentemente la evolución de la tecnología y de la mano de la <a href="http://es.wikipedia.org/wiki/Virtualizaci%C3%B3n">virtualización</a> provocado la revolución de las arquitecturas tradicionales. Escalabilidad, Disponibilidad, Redundancia, Balanceo de Carga, &#8230; vuelven a ser conceptos conocidos que están subiendo de escalafón constantemente.</p>
-
-<p><img src="http://2.bp.blogspot.com/-zRyG1sLvAeA/TjujH40YG6I/AAAAAAAAAT8/4Cg4d9aygMI/s1600/cloud_stack.gif," title="cloud stack" alt="cloud stack" /></p>
-
-<h3>SaaS</h3>
-
-<p>Se trata de la capa más externa, destinada al usuario final, principalmente. Es el Software como Service (Software as a Service). En esta capa se dan servicios de lo más vario pinto. Desde servicios de correo electrónico, álbumes de fotos, gestión de contactos, gestión de proyectos&#8230; hasta servicios que nos ofrecen almacenamiento. En este plano nos encontramos con <a href="http://www.gmail.com/">gmail</a>, <a href="http://www.flickr.com/">flickr</a>, <a href="http://www.salesforce.com/">salesforce</a>,<a href="http://teambox.com/">teambox</a> y <a href="http://www.dropbox.com/">dropbox</a> por poner algunos ejemplos.</p>
-
-<h3>PaaS</h3>
-
-<p>Se trata de la capa intermedia y que cada vez está adquiriendo más importancia. Fundamentalmente desde el punto de vista de los desarrolladores. Es la Plataforma como Service (Platform as a Service). En esta capa encontramos los recursos necesarios para poder desplegar nuestras aplicaciones (nuestros servicios). Algunas referencias tenemos en <a href="http://code.google.com/appengine/">Google App Engine</a>, <a href="http://www.microsoft.com/windowsazure/">Azure</a>, <a href="http://www.heroku.com/">Heroku</a> &#8230;</p>
-
-<p>El pasado mes de Abril entró en juego una solución promovida por <a href="http://www.vmware.com/">VMWare</a> de la que hablé en <a href="http://edachi.blogspot.com/2011/05/cloudfoundry-nueva-paas-platform-as.html">CloudFoundry: Nueva PaaS (Platform as a Service)</a>.</p>
-
-<p>Ya hablaba del vértigo que estaba despertando la plataforma y las numerosas aportaciones para soportar PHP y Erlang. Otra muestra es un fork reciente para dar soporte a aplicaciones Python y Perl, llamado <a href="http://www.activestate.com/blog/2011/05/stackato-platform-python-and-perl-cloud">Stackato</a>. Esto es una muestra más del incentivo que supone disponer de soluciones abiertas y la garantía de calidad y competitividad en el mercado.</p>
-
-<h3>IaaS</h3>
-
-<p>Se trata de la capa que gestiona la infraestructura como un servicio (Infrastructure as a Service). Es aquí donde se realiza la provisión de los recursos de bajo nivel, número de procesadores, cantidad de memoria, almacenamiento, ancho de banda&#8230; incluso el sistema operativo que será el último estrato de recubrimiento del servicio. Servicios de infraestructura encontramos en <a href="http://aws.amazon.com/">Amazon</a>, <a href="http://www.rackspace.com/">RackSpace</a>, <a href="http://www.gogrid.com/index.v2.php">GoGrid</a>, &#8230;</p>
-
-<p><a href="http://www.genbeta.com/actualidad/openstack-cloud-computing-de-codigo-abierto">De la mano de RackSpace</a> disponemos de una solución libre, <a href="http://www.openstack.org/">OpenStack</a>.  Una solución que está adquiriendo un protagonismo importante. Muestra de ello es <a href="http://cloud.ubuntu.com/2011/03/coming-up-in-openstack-cactus%E2%80%A6/">la elección de Ubuntu como plataforma Cloud</a> para su paquetería de la nube en lugar de <a href="http://www.eucalyptus.com/">Eucalyptus</a>, como venía haciendo en versiones anteriores.</p>
-
-<p>Como se puede apreciar, cada vez son más las soluciones y opciones en este nuevo reto. Medios de difusión, estrategias de mercado y apuestas innovadoras por parte de organizaciones grandes y pequeñas están despejando un camino que deja de estar tan en el aire como cabría pensar.</p>
-
-<p>Esta vorágine aumenta el desafío constante de los usuarios, responsable e ingenieros de TI que vuelven a ver cómo se pone patas arriba los procedimientos y protocolos tradicionales de desarrollo, despliegue y aprovisionamiento. Uno experimenta la sensación de que&#8230; después de todo lo aprendido, volvemos a estar como al principio&#8230; aprendiendo.</p>
-
-<p>Por esta razón trataré de hacercarme a las distintas capas con alguna prueba de concepto para conocer algo más de este nuevo mundo (si no pierdo más posts :D )</p>
-
-<p>Siguiente parada&#8230; OpenStack.</p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2011/05/23/arquitectura-cloud-basica/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -479,32 +335,12 @@ Infraestructura: Un PC o servidor</p>
 
 <p>No prentendo hacer una comparativa en toda regla, ni mucho menos. No creo que tenga los conocimientos adecuados para hacer algo de semejante calado medianamente bien, prefiero traeros un artículo muy interesante donde realizan este análisis desde los distintos ángulos entre el Cloud Computing, Grid Computing y Distributed Systems: <a href="http://arxiv.org/pdf/0901.0131">Cloud Computing and Grid Computing 360-Degree Compared</a></p>
 
-<p>En esta evolución, no son pocos los movimientos que se vienen desarrollando en este tipo de plataformas. Véase como ejemplo:</p>
-
-<ul>
-<li><a href="http://aws.amazon.com/es/">Amazon Web Services</a></li>
-<li><a href="http://code.google.com/appengine/">Google App Engine</a></li>
-<li><a href="http://www.microsoft.com/windowsazure/">Azure</a></li>
-<li><a href="http://www.heroku.com/">Heroku</a></li>
-<li><a href="http://www.ibm.com/cloud-computing/us/en/#%21paas">IBM SmartCloud</a></li>
-<li><a href="http://cloudcontrol.com/php-cloud-platform-as-a-service-en/">CloudControl</a></li>
-</ul>
-
-
-<p>Pero hay algo que, a mi parecer, hace a <a href="http://www.cloudfoundry.com/">CloudFoundry</a> algo diferente.</p>
-
-<ol>
-<li><p><strong>Proyecto Open Source</strong> <a href="http://www.cloudfoundry.org/" title="">www.cloudfoundry.org</a>: El código está disponible en <a href="https://github.com/cloudfoundry">https://github.com/cloudfoundry</a> Y esto hace que sea muy muy interesante.</p></li>
-<li><p>Sin restricciones en los frameworks soportados.</p></li>
-<li><p>Cloud Foundry Micro Cloud. Previo registro nos pueden habilitar una micro nube descargable de forma que podamos hacer nuestras pruebas en nuestros propios entornos. Nos da la capacidad de tener PaaS en una de nuestras máquinas.</p></li>
-</ol>
-
-
-<p>Definitivamente creo que springsource y vmware han hecho un movimiento muy inteligente a la hora de proporcionar una plataforma tan abierta. En su  <a href="http://www.cloudfoundry.com/faq">FAQ</a> justifican y detallan esta elección.</p>
-
-<p>Esto es lo que se puede ver a simple vista. Espero poder entrar en mayor detalle según me acerque a las plataformas con ejemplos sencillos que nos permitan conocer mejor sus características y modos de uso.</p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2011/05/03/cloudfoundry-nueva-paas-platform-as/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -556,25 +392,12 @@ Infraestructura: Un PC o servidor</p>
 
 <p>Así que&#8230; manos a la obra:</p>
 
-<p>Me voy a la pestaña de Diseño</p>
-
-<p><img src="http://1.bp.blogspot.com/-u-qu8UMSu6E/Tbk_X5wltXI/AAAAAAAAAQk/IQWr2_4miLQ/s1600/Pesta%25C3%25B1a_Dise%25C3%25B1or.png" alt="" /></p>
-
-<p>Selecciono <code>Edición de HTML</code></p>
-
-<p><img src="http://1.bp.blogspot.com/-J-MvbnfCKU0/Tbk_amUtD_I/AAAAAAAAAQo/er59b0AV1Fk/s1600/Edicion_HTML.png" alt="" /></p>
-
-<p>Descargo la plantilla completapor si las cosas salen mal y&#8230; copio el código pertinente en el recuadro editable de la plantilla</p>
-
-<p><a href="http://4.bp.blogspot.com/-UXyi8eRX9HE/TblBGj8P-HI/AAAAAAAAARI/09Hf70AYQ9w/s1600/Editar_Plantilla.png"></a></p>
-
-<p>¡Código ya resaltado!</p>
-
-<p>Prueba superada. Ya iré pensando en otro tipo de retoques de la plantilla&#8230; aunque ya he reconocido que no tengo especial arte para esto.</p>
-
-<p>Por último, aquí os dejo un listado interesante de <a href="http://www.elwebmaster.com/general/los-mejores-resaltadores-de-sintaxis-de-codigo-para-tu-web">resaltadores de sintáxis</a></p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2011/04/29/resaltando-sintaxis-en-blogger/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -610,39 +433,26 @@ Infraestructura: Un PC o servidor</p>
   </header>
 
 
-  <div class="entry-content"><div class='post'>
-<div>Este verano, leyendo <i><a href="http://www.planetadelibros.com/y-google-como-lo-haria-libro-37773.html">Y Google, ¿cómo lo haría?</i></a> uno de los libros de <a href="http://www.buzzmachine.com/about-me/">Jeff Jarvis</a>, me dije: ¡Tengo que escribir un blog!</div>
-<br/>
-<div>Respiraba emoción por todos los poros, en menos de una semana me había leído el libro y había convencido a más de 5 personas para leerlo. Estaba dando la paliza a todo el mundo sobre los conceptos y planteamientos que debíamos abordar para oxigenar nuestro querido mercado español y su acuciante crisis.</div>
-<br/>
-<div>Me encontraba como un niño que después de ver una película de Supermán&#8230; ¡decide ser superhéroe!</div>
-<br />
-<div>Empecé a darle vueltas sobre lo que podría escribir y la cosa parecía que iba a funcionar por el aluvión de ideas que iban surgiendo. Y empecé a usar la fátidica táctica de <i>Mañana empiezo. </i>Y así fue pasando el tiempo. Hablar, hablaba mucho, pensar&#8230; también ¡pero no escribía nada!</div>
-<br/>
-<div>No todo fue en vano. Durante ese tiempo, con algunos de mis compañeros, surgieron ideas tan frescas que empezamos a hablar de ponerlas en práctica. Pero yo seguía siendo fiel a mi <i>Mañana empiezo </i>y sumé alguna que otra limitación para no poder seguir el ritmo. Ellos, afortunadamente hasta hoy, son fieles al concepto y desde aquí les saludo: ¡Aupa <a href="http://www.nexora.es/">Nexora</a>!</div>
-<br/>
-<div>Ahora que lo pienso, no fue ésta la primera vez que quise hacer algo por el estilo. Tuve otra intentona con otros amigos a los que se debe el nombre de este blog. Llegamos a tener incluso reuniones de objetivos y un hosting durante&#8230; ¡6 meses sin tocarlo! En esa época <i>&#8220;blogeábamos&#8221; (perdón por el palabro) </i>para el seguimiento de los proyecto. Y alguno apuntaba maneras. Siempre le he dicho que cuando escriba un blog seré un fiel seguidor. De hecho todos esperábamos su post para pasar un buen rato. Pero de nuevo, allí quedó todo.</div>
-<br/>
-<div>Y así seguía yo, con algún pájaro más en la cabeza, eso sí. Ya empezaba a hacer algún uso más o menos decente de mi cuenta de twitter. ¡Toda una novedad eh!</div>
-<div>No han sido pocas las veces que he empezado un post y lo he dejado, porque me parecía una chorrada, porque quería poner un diseño más chulo, porque pensaba&#8230; ¿y si ya no escribo más? ¿y qué pensará la gente? ¿pero si no hay color entre lo que escribo y lo que leo? &#8230; y alguna más que no traeré a la memoria para hacer el esfuerzo de terminar éste y no quedarme en el camino.</div>
-<br/>
-<div>Pero el otro día me mandaron por correo unos <a href="http://blog.svpino.com/2010/10/este-debio-ser-el-primer-post.html">consejos útiles</a> a la hora de escribir un blog. Lo cierto es que la mayor motivación no han sido los consejos, aunque no comparta todos, sino el desafío que me supuso. Encontré algún que otro <a href="http://alt1040.com/2011/04/diez-consejos-practicos-para-iniciarte-como-blogger">decálogo</a> para estos menesteres. Me quedo con los siguientes puntos:</div>
-<br/>
-<ol>
-<li>Escribir por inspiración, por gusto&#8230;</li>
-<li>Explorar los temas que te apasionan</li>
-<li>Exponer las ideas de forma libre</li>
-<li>¡No desesperes!</li>
-</ol>
-<br/>
-<div>Y aquí estamos, con la esperanza de darle al botón de <i>Publicar Entrada </i>cuanto antes ver cómo se va desarrollando la cosa.</div>
-<br/>
-<div>El diseño, el logo&#8230; sí sí, son un poco cutres pero estoy aplicando eso de <b>&#8220;la vida en beta&#8221;</b> que será la única forma en la que consiga arrancar. Nunca se me han dado bien los escaparates.</div>
-<br/>
-<div>Por fin <i>Hoy he empezado&#8230; mañana sigo.</i></div>
-</div>
+  <div class="entry-content"><p>Este verano, leyendo <em><a href="http://www.planetadelibros.com/y-google-como-lo-haria-libro-37773.html">Y Google, ¿cómo lo haría</a></em> uno de los libros de <a href="http://www.buzzmachine.com/about-me/">Jeff Jarvis</a> me dije:</p>
+
+<blockquote><p>¡Tengo que escribir un blog!</p></blockquote>
+
+<p>Respiraba emoción por todos los poros, en menos de una semana me había leído el libro y había convencido a más de 5 personas para leerlo. Estaba dando la paliza a todo el mundo sobre los conceptos y planteamientos que debíamos abordar para oxigenar nuestro querido mercado español y su acuciante crisis.</p>
+
+<p>Me encontraba como un niño que después de ver una película de Supermán&#8230; ¡decide ser superhéroe!</p>
+
+<p>Empecé a darle vueltas sobre lo que podría escribir y la cosa parecía que iba a funcionar por el aluvión de ideas que iban surgiendo. Y empecé a usar la fátidica táctica de <em>Mañana empiezo</em> Y así fue pasando el tiempo. Hablar, hablaba mucho, pensar&#8230; también ¡pero no escribía nada!</p>
+
+<p>No todo fue en vano. Durante ese tiempo, con algunos de mis compañeros, surgieron ideas tan frescas que empezamos a hablar de ponerlas en práctica. Pero yo seguía siendo fiel a mi y <em>Mañana empiezo</em> Sumé alguna que otra limitación para no poder seguir el ritmo. Ellos, afortunadamente hasta hoy, son fieles al concepto y desde aquí les saludo: <a href="http://www.nexora.es/">¡Aupa Nexora!</a></p>
+
+<p>Ahora que lo pienso, no fue ésta la primera vez que quise hacer algo por el estilo. Tuve otra intentona con otros amigos a los que se debe el nombre de este blog. Llegamos a tener incluso reuniones de objetivos y un hosting durante&#8230; ¡6 meses sin tocarlo! En esa época <em>&#8220;blogeábamos&#8221;</em> (perdón por el palabro) para el seguimiento de los proyecto. Y alguno apuntaba maneras. Siempre le he dicho que cuando escriba un blog seré un fiel seguidor. De hecho todos esperábamos su post para pasar un buen rato. Pero de nuevo, allí quedó todo.</p>
+
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2011/04/27/manana-empiezo/">Read on &rarr;</a>
+    </footer>
   
 
 

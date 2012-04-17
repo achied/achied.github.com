@@ -4,7 +4,7 @@
   <title><![CDATA[Category: blogger | Achied's Blog]]></title>
   <link href="http://achied.github.com/blog/categories/blogger/atom.xml" rel="self"/>
   <link href="http://achied.github.com/"/>
-  <updated>2012-04-17T01:32:31+02:00</updated>
+  <updated>2012-04-17T02:28:19+02:00</updated>
   <id>http://achied.github.com/</id>
   <author>
     <name><![CDATA[Eduardo Aceituno]]></name>
@@ -24,17 +24,42 @@
 forma de diversión que como tarea seria. Como resultado... pocas y
 desorganizadas entradas.</p>
 
+<p>La cosa empezó con <a href="http://www.blogger.com/">blogger</a> y poco a poco la
+dependencia de tener que tener un cliente específico o tener que estar editando
+online hacían que cada vez me costara más. Probé a usar
+<a href="http://www.scribefire.com/">scribefire</a> pero tampoco tuve mucho éxito.</p>
+
+<p>Como siempre, la falta de tiempo y la necesidad de tener una forma más rápida y sencilla de crear los
+post, poder revisarlos, poder insertar trozos de cógio fácilmente... eran las
+excusas que ivan sumando para abandonar la tarea que había empezado.</p>
+
+<p>Estos días atrás oí hablar de <a href="https://github.com/mojombo/jekyll">jekyll</a> y
+<a href="http://jekyllbootstrap.com/">jekyllbootstrap</a> pero no terminaba de animarme ni
+de obtener un resultado que me convenciera a la primera.</p>
+
+<p>Pero he encontrado el proyecto <a href="http://octopress.org/">octopress</a>, un
+framework para <a href="https://github.com/mojombo/jekyll">jekyll</a> que simplifica la
+necesidad de tener que crear tus propios HTML y CSS.</p>
+
+<p>La página del proyecto muestra una documentación sencilla y clara de <a href="http://octopress.org/help/">cómo
+instalar y personalizar el blog</a></p>
+
 <h2>¿Y por qué cambiar?</h2>
 
 <p>Si escribo poco y apenas le dedico tiempo... ¿por qué cambiar? Básicamente por
 tres razones:</p>
 
+<!-- more -->
+
+
 <ol>
 <li>Seguir aprendiendo ruby</li>
 <li>Seguir aprendiendo Git</li>
-<li>Hacerlo más personalizable</li>
+<li>Seguir divirtiéndome</li>
 </ol>
 
+
+<p>Existen otra serie de factores que me han animado al cambio.</p>
 
 <h2>Más útil para un desarrollador</h2>
 
@@ -57,6 +82,37 @@ end
 </span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;Hello World!!!&quot;</span>
 </span><span class='line'><span class="k">end</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h2>Edición del post fácil y cómoda</h2>
+
+<p>Con cualquier editor, de forma sencilla, en <a href="http://daringfireball.net/projects/markdown/syntax">markdown</a></p>
+
+<p>```</p>
+
+<h2>Edición del post fácil y cómoda</h2>
+
+<p>Con cualquier editor, de forma sencilla, en <a href="http://daringfireball.net/projects/markdown/syntax">markdown</a>
+```</p>
+
+<h2>Previsualización del blog offline</h2>
+
+<p>Tan sencillo como</p>
+
+<p><code>
+bundle exec rake generate
+bundle exec rake preview
+</code></p>
+
+<p>y tendré en mi máquina local la versión completa de mi blog.</p>
+
+<h2>Integrado con las páginas y repositorios de github</h2>
+
+<p>Al tener el blog dentro del repositorio de <a href="https://github.com/">github</a> puedo
+enlazar las páginas de los proyectos y llevar el control de versiones de todos
+los post.</p>
+
+<p>¿Esto hará que escriba más post? No lo sé, pero he pasado un rato divertido y...
+he aprendido mucho.</p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: cloud | Achied's Blog]]></title>
   <link href="http://achied.github.com/blog/categories/cloud/atom.xml" rel="self"/>
   <link href="http://achied.github.com/"/>
-  <updated>2012-04-17T01:32:31+02:00</updated>
+  <updated>2012-04-17T02:28:19+02:00</updated>
   <id>http://achied.github.com/</id>
   <author>
     <name><![CDATA[Eduardo Aceituno]]></name>
@@ -31,6 +31,9 @@
 <p>Ahora no es que esté en mejores condiciones de abordar esta tarea, es que he decido escribir lo que sé y como lo sé. De forma sencilla, compartir aquello que ha sido capaz de captar mi atención y ha sido relevante para mí.</p>
 
 <p>Por eso, en este artículo, serán muchas las referencias a un tiempo extenso y próspero de búsquedas y lecturas intensas. Como resultado, mencionar y enlazar aquellas cosas que otros me han mostrado y ... ¿para qué repetirlo si ellos lo han hecho y lo han hecho bien?</p>
+
+<!-- more -->
+
 
 <p>Han sido dos los proyectos que me han enganchado desde el primer momento:</p>
 
@@ -125,6 +128,9 @@
 
 <p>Así que para enmendar mi torpeza haré un breve resumen de lo que presentaba en la última entrada.</p>
 
+<!-- more -->
+
+
 <h2>Arquitectura Cloud básica</h2>
 
 <p>Los elementos fundamentales de la arquitectura cloud no difieren mucho de aquellos que tradicionalmente conocemos. Antes de desplegar ningún tipo de servicio o desarrollo, es preciso disponer de una plataforma que nos ofrezca los recursos necesarios para el ciclo de vida completo de nuestra aplicación: Un contenedor de ejecución, una fuente de acceso a datos, ... Y esta plataforma, a su vez, ha de descansar en alguna infraestructura que le ofrezca los recursos de cómputo, memoria, red...</p>
@@ -178,6 +184,9 @@ Infraestructura: Un PC o servidor</p>
 <p>En algunos casos (<a href="http://books.google.es/books?id=TxOJI24idPYC&amp;amp;pg=PA45&amp;amp;lpg=PA45&amp;amp;dq=grid+evolution+to+cloud&amp;amp;source=bl&amp;amp;ots=XVY-Q1c4Ef&amp;amp;sig=h3HE7zT5mrnYt313_W7LvjmonJc&amp;amp;hl=es&amp;amp;ei=z4O-TdnYOYi38QOVpsW_BQ&amp;amp;sa=X&amp;amp;oi=book_result&amp;amp;ct=result&amp;amp;resnum=7&amp;amp;ved=0CGIQ6AEwBg#v=onepage&amp;amp;q=grid%20evolution%20to%20cloud&amp;amp;f=false">Grid and Cloud Computing: A Business Perspective on Technology an Applications</a>, por ejemplo) se ve el <a href="http://en.wikipedia.org/wiki/Cloud_computing">Cloud Computing</a> como una evolución del <a href="http://en.wikipedia.org/wiki/Grid_computing" title="">Grid Computing</a> Y creo que no les falta razón. De hecho comparten muchos puntos en común en la orientación de su paradigma y con unas virtudes muy similares.</p>
 
 <p>No prentendo hacer una comparativa en toda regla, ni mucho menos. No creo que tenga los conocimientos adecuados para hacer algo de semejante calado medianamente bien, prefiero traeros un artículo muy interesante donde realizan este análisis desde los distintos ángulos entre el Cloud Computing, Grid Computing y Distributed Systems: <a href="http://arxiv.org/pdf/0901.0131">Cloud Computing and Grid Computing 360-Degree Compared</a></p>
+
+<!-- more -->
+
 
 <p>En esta evolución, no son pocos los movimientos que se vienen desarrollando en este tipo de plataformas. Véase como ejemplo:</p>
 

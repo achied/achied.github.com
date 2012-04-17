@@ -4,7 +4,7 @@
   <title><![CDATA[Category: yaml | Achied's Blog]]></title>
   <link href="http://achied.github.com/blog/categories/yaml/atom.xml" rel="self"/>
   <link href="http://achied.github.com/"/>
-  <updated>2012-04-17T01:32:31+02:00</updated>
+  <updated>2012-04-17T02:28:19+02:00</updated>
   <id>http://achied.github.com/</id>
   <author>
     <name><![CDATA[Eduardo Aceituno]]></name>
@@ -25,6 +25,9 @@
 <p><img src="http://2.bp.blogspot.com/-2dpmYu1N5FA/Tsue5q_IbvI/AAAAAAAAAUs/4EFll10IDKg/s1600/error_yaml.png" title="error de configuración y compilación de yaml-0.1.4" alt="error_yaml" /></p>
 
 <p>Para solucionar este pequeño inconveniente realizamos los siguientes pasos:</p>
+
+<!-- more -->
+
 
 <p>Instalamos libtool, en el caso de no tenerlo instalado</p>
 
