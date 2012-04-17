@@ -16,6 +16,8 @@ Después de haber instalado rvm la compilación de ruby nos da un error extraño
 
 Para solucionar este pequeño inconveniente realizamos los siguientes pasos:
 
+<!-- more -->
+
 Instalamos libtool, en el caso de no tenerlo instalado
 
 ```

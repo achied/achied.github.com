@@ -20,6 +20,8 @@ Y es que en el Cloud no existe la magia y hay que tener en cuenta que las ventaj
 
 Así que para enmendar mi torpeza haré un breve resumen de lo que presentaba en la última entrada.
 
+<!-- more -->
+
 ##Arquitectura Cloud básica
 
 Los elementos fundamentales de la arquitectura cloud no difieren mucho de aquellos que tradicionalmente conocemos. Antes de desplegar ningún tipo de servicio o desarrollo, es preciso disponer de una plataforma que nos ofrezca los recursos necesarios para el ciclo de vida completo de nuestra aplicación: Un contenedor de ejecución, una fuente de acceso a datos, ... Y esta plataforma, a su vez, ha de descansar en alguna infraestructura que le ofrezca los recursos de cómputo, memoria, red...

@@ -20,6 +20,8 @@ http://www.cyberack.com/2007/07/adding-syntax-highlighter-to-blogger.html
 
 Así que... manos a la obra:
 
+<!-- more -->
+
 Me voy a la pestaña de Diseño
 
 ![](http://1.bp.blogspot.com/-u-qu8UMSu6E/Tbk_X5wltXI/AAAAAAAAAQk/IQWr2_4miLQ/s1600/Pesta%25C3%25B1a_Dise%25C3%25B1or.png)

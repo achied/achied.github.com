@@ -23,6 +23,8 @@ Ahora no es que esté en mejores condiciones de abordar esta tarea, es que he de
 
 Por eso, en este artículo, serán muchas las referencias a un tiempo extenso y próspero de búsquedas y lecturas intensas. Como resultado, mencionar y enlazar aquellas cosas que otros me han mostrado y ... ¿para qué repetirlo si ellos lo han hecho y lo han hecho bien?
 
+<!-- more -->
+
 Han sido dos los proyectos que me han enganchado desde el primer momento:
 
 * [OpenStack](http://www.openstack.org/)

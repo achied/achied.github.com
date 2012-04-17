@@ -15,6 +15,8 @@ En algunos casos ([Grid and Cloud Computing: A Business Perspective on Technolog
 
 No prentendo hacer una comparativa en toda regla, ni mucho menos. No creo que tenga los conocimientos adecuados para hacer algo de semejante calado medianamente bien, prefiero traeros un artículo muy interesante donde realizan este análisis desde los distintos ángulos entre el Cloud Computing, Grid Computing y Distributed Systems: [Cloud Computing and Grid Computing 360-Degree Compared](http://arxiv.org/pdf/0901.0131)
 
+<!-- more -->
+
 En esta evolución, no son pocos los movimientos que se vienen desarrollando en este tipo de plataformas. Véase como ejemplo:
 
 * [Amazon Web Services](http://aws.amazon.com/es/)
